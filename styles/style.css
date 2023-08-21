@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    src: url(./Inter-VariableFont_slnt\,wght.woff2);
+  }
+  
+body {
+    font-family: Inter;
+    text-align: center;
+    background: url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: #C4F403;
+    font-size: 80px;
+    line-height: 5px ;
+}
+
+#game-intro{
+    width: 50%;
+    height: 50%;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin: 25px auto 0 auto;
+    background-color: rgba(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p{
+    color: white;
+    line-height: 25px;
+}
+
+.img-logo{
+    width: 200px;
+}
+
+body button{
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    border-color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    color:#C4F403
+}
+
+h3 {
+    color: white;
+}
+
+/* #game-container {
+    display: flex;
+    width: 100vw;
+    padding: 20px 0px;
+    justify-content: center;
+} */
+
+#game-end {
+    display: none;
+    background-color: rgba(255,255,255,0.6);
+    width: 50%;
+    height: 50%;
+    /* /* left: 50%; */
+    /* bottom: 50%; */
+    margin: auto;
+    padding: 50px 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+    
+}
+
+
