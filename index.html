@@ -8,9 +8,12 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="game-screen">
         <div class="main">
-            <h1>FIGHT THE FIRE</h1>
+            
+            <h1><iframe src="https://giphy.com/embed/26DNj3iQi58mrvTDW"  frameBorder="0" class="giphy-embed"></iframe>FIGHT THE FIRE
+                <iframe src="https://giphy.com/embed/26DNj3iQi58mrvTDW"  frameBorder="0" class="giphy-embed"></iframe></h1>
+
             <div>
                 <h2 id="score">Score: 0</h2>
                 <h2 id ="timeLeft">Time Left: 30</h2>         
@@ -21,7 +24,6 @@
         </div>
 
         <div class="grid">
-            <div class="square" id="0"></div>
             <div class="square" id="1"></div>
             <div class="square" id="2"></div>
             <div class="square" id="3"></div>
@@ -30,42 +32,29 @@
             <div class="square" id="6"></div>
             <div class="square" id="7"></div>
             <div class="square" id="8"></div>
+            <div class="square" id="9"></div>
         </div>
     </div>
-        
-        <!-- <p>The Northern Hemisphere has seen significant wildfire activity since the beginning of May 2023
-        <br/>Try to extinguish the fire on the trees.
-        <br/><strong>WINNER: </strong> <br/> > 50 trees in 30 seconds.</p> -->
 
-        <!-- <p><strong>Instructions:</strong> 
-            <br/>Use your track pad/mouse to splash water
-        </p>
-        <br/> -->
-        
-
-        
-    <!-- </div>
-
-    <div id="game-container">
-        <div id="game-screen">
-            <!-- div tag is made using Javascript -->
-        <!-- </div>
-    </div> --> -->
-
-    <!-- <div id="game-end">
-        <iframe src="https://giphy.com/embed/U4LpAIdyKoDC0ICxYW" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        <h1 id="game-message-win">Hooray! <br/>
+    <div id ="gameOverScreen">
+        <!-- Information End Page -->
+        <div class = "game-message"> 
+            <iframe src="https://giphy.com/embed/U4LpAIdyKoDC0ICxYW" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <h2 id="score">Score: <span id="finalScore"></span> </h2>
+            <h1>Hooray! <br/>
             Your effort made a difference!</h1>
-        <br/>
+        </div>
+        
+        <div class = "game-information">
         <button id="restart-button">Restart</button>
-
-        <p> For more information on how to contribute more in real life through technology.
-            <br/>You can use <a href="https://www.ecosia.org/?c=en" target="_blank"><strong>Ecosia</strong></a> 
-        - the search engine that plants trees & <br/><a href="https://www.forestapp.cc/" target="_blank"><strong>
-            Forest App</strong></a> - an app that helps you stay focused and plant trees. </p>
-    </div> -->
-<!-- </main> -->
-    <!-- <script src="scripts/game.js"></script>   -->
-    <script src="scripts/script.js"></script>
+        <br/>
+        <h3> For more information on how to contribute more in real life through technology
+            <br/>use <a href="https://www.ecosia.org/?c=en" target="_blank"><span>Ecosia</span></a> 
+        - the search engine that plants trees & <br/><a href="https://www.forestapp.cc/" target="_blank"><span>
+            Forest App</span></a> - an app that helps you stay focused and plant trees.</h3>
+        </div>
+    </div>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
