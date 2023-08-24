@@ -16,6 +16,4 @@ window.onload = function () {
   function restartGame() {
     location.reload();
   }
-
-
 };
