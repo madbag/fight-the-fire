@@ -8,9 +8,9 @@ class Game {
       this.hitPosition = null;
       this.timerId = null;
       this.randomBurnId = null;
-      this.splashWater = new Audio('../images/sound/water-splash-46402.mp3u')
-      this.gameMusic = new Audio('./images/sound effect/FIREBG.m4a')
-      this.gameOverMusic = new Audio('./images/sound effect/gameover.mp3')
+      this.splashWater = new Audio('./images/sound/water-splash-46402.mp3u')
+      this.gameMusic = new Audio('./images/sound/FIREBG.m4a')
+      this.gameOverMusic = new Audio('./images/sound/gameover.mp3')
       this.gameScreen = document.querySelector('.game-screen');
       this.gameOverScreen = document.getElementById('gameOverScreen');
       this.finalScore = document.getElementById('finalScore');
