@@ -17,5 +17,5 @@ window.onload = function () {
     location.reload();
   }
 
-//   game.randomBurning();
+
 };

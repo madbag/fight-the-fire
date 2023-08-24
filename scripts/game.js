@@ -8,6 +8,9 @@ class Game {
       this.hitPosition = null;
       this.timerId = null;
       this.randomBurnId = null;
+      this.splashWater = new Audio('../images/sound effect/Splash.mp3')
+      this.gameMusic = new Audio('../images/sound effect/FIREBG.m4a')
+      this.gameOverMusic = new Audio('../images/sound effect/gameover.mp3')
       this.gameScreen = document.querySelector('.game-screen');
       this.gameOverScreen = document.getElementById('gameOverScreen');
       this.finalScore = document.getElementById('finalScore');
@@ -15,6 +18,7 @@ class Game {
         square.addEventListener('mousedown', () => {
           if (this.timerId !== null) {
             if (square.id === this.hitPosition) {
+              this.splashWater.play();
               this.score++;
               this.scoreH2.innerText = `Your Score: ${this.score}`;
               this.hitPosition = null;
@@ -23,8 +27,8 @@ class Game {
         });
       });
     }
-  
-    randomBurning() {
+
+      randomBurning() {
       this.squares.forEach((square) => {
         square.classList.remove('burn');
       });
@@ -48,11 +52,14 @@ class Game {
     startGame() {
       this.score = 0;
       this.timeLeft = 30;
+      this.gameMusic.play();
+      setTimeout(()=>{this.gameMusic.pause()}, 19000)
       this.timerId = setInterval(() => this.randomBurning(), 650);
       this.randomBurnId = setInterval(() => this.countDown(), 650);
     }
   
     showGameOverScreen() {
+      this.gameOverMusic.play();
       this.finalScore.textContent = this.score;
       this.gameScreen.style.display = 'none';
       this.gameOverScreen.style.display = 'block';
