@@ -1,5 +1,5 @@
 # Fight the Fire
-[link]
+https://madbag.github.io/fight-the-fire/
 
 ## Description
 Fight the Fire is a game where players have to pour water on the blocks of burning trees to douse the fire and score points. The faster they score, the more points the player will get. The game is based on time limit and after the time is over the player will get the final score on their end screen.
@@ -27,11 +27,8 @@ Fight the Fire is a game where players have to pour water on the blocks of burni
   Start of the Game - 
   getElementById; addEventListener; startGame(); restartGame(); location.reload()
 
-## Task
-
-
 ## Links
 - [Trello Board Link](https://trello.com/invite/b/llYBTCTX/ATTI0da302d688494021c591bf4997c4330822D1C499/front-end-game-project-1)
-- [Slides Link]
+- [Slides Link](https://prezi.com/p/uz05nqeicjhx/?present=1)
 - [Github repository Link](https://github.com/madbag/fight-the-fire.git)
-- [Deployment Link]
+- [Deployment Link](https://madbag.github.io/fight-the-fire/)

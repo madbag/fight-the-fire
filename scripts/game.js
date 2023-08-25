@@ -8,14 +8,18 @@ class Game {
       this.hitPosition = null;
       this.timerId = null;
       this.randomBurnId = null;
-      this.splashWater = new Audio('./images/sound/water-splash-46402.mp3u')
+
+      this.splashWater = new Audio('./images/sound/Splash.mp3')
       this.gameMusic = new Audio('./images/sound/FIREBG.m4a')
       this.gameOverMusic = new Audio('./images/sound/gameover.mp3')
+
+      this.gameBegin = document.getElementById('startGame');
       this.gameScreen = document.querySelector('.game-screen');
       this.gameOverScreen = document.getElementById('gameOverScreen');
       this.finalScore = document.getElementById('finalScore');
+
       this.squares.forEach((square) => {
-        square.addEventListener('mousedown', () => {
+        square.addEventListener('mousedown', () => {//
           if (this.timerId !== null) {
             if (square.id === this.hitPosition) {
               this.splashWater.play();
@@ -28,7 +32,7 @@ class Game {
       });
     }
 
-      randomBurning() {
+    randomBurning() {
       this.squares.forEach((square) => {
         square.classList.remove('burn');
       });
@@ -48,7 +52,7 @@ class Game {
         this.showGameOverScreen();
       }
     }
-      
+
     startGame() {
       this.score = 0;
       this.timeLeft = 30;
@@ -63,5 +67,11 @@ class Game {
       this.finalScore.textContent = this.score;
       this.gameScreen.style.display = 'none';
       this.gameOverScreen.style.display = 'block';
+    }
+
+    onStart(){
+      this.gameBegin.style.display = 'none';
+      this.gameScreen.style.display ='block';
+      // this.gameOverScreen.style.display = 'block'
     }
 }

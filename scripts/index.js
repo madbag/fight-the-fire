@@ -1,6 +1,3 @@
-// // index.js
-
-// const Game = require('./game');
 
 window.onload = function () {
   const game = new Game();
@@ -10,10 +7,9 @@ window.onload = function () {
 
   startNewGameButton.addEventListener('click', () => {
     game.startGame();
+    game.onStart();
   });
 
-  restartGameButton.addEventListener('click', restartGame);
-  function restartGame() {
-    location.reload();
-  }
-};
+  restartGameButton.addEventListener('click', () =>
+    location.reload());
+  };

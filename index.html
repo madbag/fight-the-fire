@@ -8,10 +8,20 @@
 </head>
 
 <body>
-    <div class="game-screen">
-        <div class="startgame">
-            
+<!--Screen 1-->
+        <div id="startGame">
+            <div class="message">
+                <h1>Many parts of the world are currently affected by Wild Fire. <br/>
+                    Let us try to douse the fire! <br/></h1>
+            <h3> You have only 30 seconds to save as many trees as you can.<br/>
+            Click on the wildfires to splash some water and help the firefighters!<br/><br/> 
+            <span class="urgent">HURRY UP!!!</span></h3>            
+            <button id="startNewGame">Start</button>
         </div>
+        </div>
+
+<!--Screen 2-->
+        <div class="game-screen">
         <div class="main">
             
             <h1><iframe src="https://giphy.com/embed/26DNj3iQi58mrvTDW"  frameBorder="0" class="giphy-embed"></iframe>FIGHT THE FIRE
@@ -21,9 +31,7 @@
                 <h2 id="score">Trees saved: 0</h2>
                 <h2 id ="timeLeft">Time Left: 30</h2>         
             </div>
-            <div>
-                <button id="startNewGame">Start</button>
-            </div>
+            
         </div>
 
         <div class="grid">
@@ -37,19 +45,19 @@
             <div class="square" id="8"></div>
             <div class="square" id="9"></div>
         </div>
-    </div>
-
+        </div>
+<!--Screen 3-->
     <div id ="gameOverScreen">
         <!-- Information End Page -->
         <div class = "game-message"> 
             <iframe src="https://giphy.com/embed/U4LpAIdyKoDC0ICxYW" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             <h2 id="score">Trees saved: <span id="finalScore"></span> </h2>
-            <h1>Hooray! <br/>
-            Your effort made a difference!</h1>
+            <h2>Hooray! <br/>
+            Your effort made a difference!</h2>
         </div>
         
         <div class = "game-information">
-        <button id="restart-button">Restart</button>
+            <button id="restart-button">Restart</button>
         <br/>
         <h3> For more information on how to contribute more in real life through technology
             <br/>use <a href="https://www.ecosia.org/?c=en" target="_blank"><span>Ecosia</span></a> 
