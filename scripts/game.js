@@ -19,7 +19,7 @@ class Game {
       this.finalScore = document.getElementById('finalScore');
 
       this.squares.forEach((square) => {
-        square.addEventListener('mousedown', () => {//
+        square.addEventListener('mousedown', () => { //The mousedown event is fired whenever the cursor or pointer is inside the selected element and the button is clicked down i.e. pressed and not released.
           if (this.timerId !== null) {
             if (square.id === this.hitPosition) {
               this.splashWater.play();
@@ -34,7 +34,7 @@ class Game {
 
     randomBurning() {
       this.squares.forEach((square) => {
-        square.classList.remove('burn');
+        square.classList.remove('burn');//takes a single element as an argument and removes it from the list. 
       });
   
       let randomSquare = this.squares[Math.floor(Math.random() * this.squares.length)];
