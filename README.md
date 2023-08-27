@@ -18,14 +18,28 @@ Fight the Fire is a game where players have to pour water on the blocks of burni
 - cursor gif animation. 
 
 ## Data structure
+  **Game.JS**
   Game Class
-- randomBurning(): forEach(); Math.floor; Math.random; .remove();
-- countDown(): clearInterval();
-- startGame(): setTimeout(); setInterval();
-- showGameOverScreen: .play();
+- randomBurning(): 
+- forEach(); 
+- Math.floor; 
+- Math.random; 
+- .remove();
+- countDown(): 
+- clearInterval();
+- startGame(): 
+- setTimeout(); 
+- setInterval();
+- showGameOverScreen: 
+- .play();
   
+  **Index.js**
   Start of the Game - 
-  getElementById; addEventListener; startGame(); restartGame(); location.reload()
+- getElementById; 
+- addEventListener; 
+- startGame(); 
+- restartGame(); 
+- location.reload()
 
 ## Links
 - [Trello Board Link](https://trello.com/invite/b/llYBTCTX/ATTI0da302d688494021c591bf4997c4330822D1C499/front-end-game-project-1)
