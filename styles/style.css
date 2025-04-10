@@ -1,174 +1,219 @@
 @font-face {
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 400;
-    src: url(./Inter-VariableFont_slnt\,wght.woff2);
-  }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(./Inter-VariableFont_slnt\wght.woff2);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
 
-#startGame{
-    background: url('../images/startScreen.jpeg');
-    background-position: center;
-    background-size: cover;
+/* Screen 1 */
+.startGame {
+  background: url("../images/startScreen.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: black;
+  width: 1080px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  border-radius: 25px;
+  min-width: 300px;
+}
+
+/* Screen 2 */
+.game-screen {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background: url("../images/background.jpg");
+  background-position: center;
+  padding: 10px;
+}
+
+.game-screen {
+  display: none;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50rem;
+  justify-items: center;
+  text-align: center;
+  margin: 20px auto;
+}
+
+h1 {
+  color: #c4f403;
+  font-size: 50px;
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 20px;
+}
+
+/* h2 {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 15px 15px;
+} */
+
+button {
+  width: 12rem;
+  padding: 12px 5px;
+  color: #c4f403;
+  border-color: white;
+  background-color: rgb(0, 0, 0);
+  font-size: 20px;
+  border-radius: 50px;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50em;
+  color: black;
+  cursor: url("../images/bucket-6877791_1280\ \(1\).png"), auto;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.square {
+  width: 200px;
+  height: 170px;
+  border: 2px solid white;
+  background-color: black;
+  box-shadow: 1px 10px 5px black;
+  margin: 10px;
+}
+
+.burn {
+  background: url(../images/burning\ tree.gif);
+  background-size: cover;
+  padding: 10px;
+}
+
+.score-keeper{
+    display: flex;
+    flex-direction: row;
     color: white;
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    width: 30%;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 15px;
+    place-items: center;
 }
 
-.message {
-    position: absolute;
+/* Screen 3 */
+#gameOverScreen {
+  background-color: black;
+  display: none;
+  padding: 10em;
+  height: 100vh;
+}
+
+.game-message {
+  color: #c4f403;
+  font-size: 40px;
+  padding: 30px;
+  text-align: center;
+}
+
+.game-information {
+  color: white;
+  text-align: center;
+}
+
+#game-information p {
+  font-size: 20px;
+}
+
+h3 {
+  padding: 30px;
+}
+
+h4 {
+  margin: 30px;
+  line-height: 1.5em;
+}
+
+span {
+  font-weight: 600;
+  color: #c4f403;
+  font-style: italic;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .intro-screen {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px;
+    padding: 20px;
     background-color: black;
+    width: 1080px;
     text-align: center;
-    padding: 50px 50px;
-    border-radius: 25px;
-}
-
-
-.game-screen{
-    min-height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background: url("../images/background.jpg");
-    background-position: center;
-    font-family: Inter;
-    padding: 10px;
-}
-
-.game-screen{
-    display: none;
-}
-
-
-.main {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: 50rem;
     justify-content: center;
-    text-align: center;
-    margin: 20px auto;
-}
+    padding: 50px;
+    border-radius: 25px;
+    min-width: 300px;
+  }
 
-.main h1,
-h1 {
-    color: #C4F403;
-    font-size: 50px;
+  h1 {
+    color: #c4f403;
+    font-size: 40px;
     background-color: black;
     padding: 10px;
     font-family: Inter;
     display: flex;
     flex-direction: row;
     border-radius: 20px;
+  }
 }
-
-.main h2 {
-    display: inline-block;
-    color: white;  
-    font-size: 20px;
-    background-color: black;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 15px 15px;
-    font-family: Inter;
-}
-
-button
-{
-    width: 12rem;
-    padding:12px 5px;
-    color:#C4F403;
-    border-color: white;
-    background-color: rgb(0, 0, 0);
-    font-size: 20px;
-    border-radius: 50px;
-    margin: 10px;
-    text-transform: uppercase;
-}
-
-button:hover{
-    cursor: pointer;
-}
-
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 50em;
-    color: black;
-    cursor: url('../images/bucket-6877791_1280\ \(1\).png'), auto;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
-
-.square {
-    width: 200px;
-    height: 170px;
-    border: 2px solid white;
-    background-color: black;
-    box-shadow: 1px 10px 5px black;
-    margin: 10px;
-}
-
-.burn {
-    background: url(../images/burning\ tree.gif) ;
-    background-size: cover;
-    padding: 10px;
-}
-
-#gameOverScreen {
-    background-color: black;
-    display: none;
-    padding: 10em ;
-    font-family: Inter;
-    height: 100vh;
-}
-
-.game-message {
-    color: #C4F403;
-    font-size: 40px;
-    padding: 30px;
-    text-align: center;
-}
-
-.game-information{
-    color: white;
-    text-align: center;
-}
-
-#game-information p {
-    font-size: 20px;
-}
-
-h3{
-    padding: 30px;
-    height: 100%;
-}
-
-h4{
-    margin: 30px;
-    line-height: 1.5em;
-}
-
-span{
-    font-weight: 600;
-    color: #C4F403;
-    font-style: italic;
-}
-
