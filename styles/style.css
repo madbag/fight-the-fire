@@ -40,43 +40,99 @@
 }
 
 /* Screen 2 */
-.game-screen {
-  min-height: 100vh;
-  width: 100%;
+.game-div {
   display: flex;
   flex-direction: column;
   place-items: center;
   background: url("../images/background.jpg");
   background-position: center;
-  padding: 10px;
+  min-height: 100vh;
+  width: 100%;
 }
-
 
 .game-screen {
   display: none;
+  min-height: 100vh;
 }
 
-.title {
+.title h1 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  text-align: center;
   width: 50rem;
+  margin: 20px;
+  font-size: 40px;
+}
+
+.score-keeper {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
   justify-items: center;
   text-align: center;
-  margin: 20px auto;
-}
-
-
-/* h2 {
-  display: inline-block;
-  color: white;
-  font-size: 20px;
+  gap: 20px;
+  font-size: 15px;
   background-color: black;
   border-radius: 20px;
-  margin: 10px;
-  padding: 15px 15px;
-} */
 
+  padding: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  color: black;
+  cursor: url("../images/bucket-6877791_1280\ \(1\).png"), auto;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.square {
+  width: 200px;
+  height: 170px;
+  border: 2px solid white;
+  background-color: black;
+  box-shadow: 1px 10px 5px black;
+}
+
+.burn {
+  background: url(../images/burning\ tree.gif);
+  background-size: cover;
+  padding: 10px;
+}
+
+/* Screen 3 */
+#gameOverScreen {
+  background-color: black;
+  /* display: none; */
+  padding: 5em;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-message {
+  color: #c4f403;
+  font-size: 40px;
+  text-align: center;
+}
+
+.game-information {
+  color: white;
+  text-align: center;
+}
+
+#game-information p {
+  font-size: 20px;
+}
+
+/* Rest */
 button {
   width: 12rem;
   padding: 12px 5px;
@@ -93,76 +149,13 @@ button:hover {
   cursor: pointer;
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 50em;
-  color: black;
-  cursor: url("../images/bucket-6877791_1280\ \(1\).png"), auto;
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.square {
-  width: 200px;
-  height: 170px;
-  border: 2px solid white;
-  background-color: black;
-  box-shadow: 1px 10px 5px black;
-  margin: 10px;
-}
-
-.burn {
-  background: url(../images/burning\ tree.gif);
-  background-size: cover;
-  padding: 10px;
-}
-
-.score-keeper{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    align-items: center;
-    justify-items: center;
-    gap: 20px;
-    width: 30%;
-    font-size: 20px;
-    background-color: black;
-    border-radius: 20px;
-    margin: 10px;
-    padding: 15px;
-    place-items: center;
-}
-
-/* Screen 3 */
-#gameOverScreen {
-  background-color: black;
-  display: none;
-  padding: 10em;
-  height: 100vh;
-}
-
-.game-message {
-  color: #c4f403;
-  font-size: 40px;
-  padding: 30px;
-  text-align: center;
-}
-
-.game-information {
-  color: white;
-  text-align: center;
-}
-
-#game-information p {
-  font-size: 20px;
-}
-
 h3 {
-  padding: 30px;
+  padding: 10px;
+  line-height: 150%;
+}
+
+h3 a {
+  text-decoration: none;
 }
 
 h4 {
@@ -173,9 +166,7 @@ h4 {
 span {
   font-weight: 600;
   color: #c4f403;
-  font-style: italic;
 }
-
 
 @media only screen and (min-width: 600px) {
   .intro-screen {
