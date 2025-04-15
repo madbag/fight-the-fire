@@ -108,7 +108,7 @@
 /* Screen 3 */
 #gameOverScreen {
   background-color: black;
-  /* display: none; */
+  display: none;
   padding: 5em;
   height: 100vh;
   display: flex;
