@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Inter;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   src: url(./Inter-VariableFont_slnt\wght.woff2);
@@ -23,21 +23,20 @@
 }
 
 .intro-screen {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
+  position: relative;
+  max-width: 60%;
   background-color: black;
-  width: 1080px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
   border-radius: 25px;
-  min-width: 300px;
+}
+
+.intro-screen h1 {
+  color: #c4f403;
+  font-size: 50px;
 }
 
 /* Screen 2 */
@@ -51,6 +50,7 @@
   background-position: center;
   padding: 10px;
 }
+
 
 .game-screen {
   display: none;
@@ -66,17 +66,6 @@
   margin: 20px auto;
 }
 
-h1 {
-  color: #c4f403;
-  font-size: 50px;
-  background-color: black;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  border-radius: 20px;
-}
 
 /* h2 {
   display: inline-block;
