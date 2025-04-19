@@ -44,6 +44,10 @@
   font-size: 50px;
 }
 
+.intro-screen h3 {
+  margin-top: 20px;
+}
+
 /* Screen 2 */
 .game-div {
   display: flex;
