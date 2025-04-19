@@ -106,31 +106,28 @@
 }
 
 /* Screen 3 */
-#gameOverScreen {
-  background-color: black;
+.game-over {
   display: none;
+}
+
+.game-message {
   min-width: 100vw;
-  padding: 5em;
   height: 100vh;
+  background-color: black;
+  padding: 5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.game-message {
   color: #c4f403;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
 
-.game-information {
-  color: white;
-  text-align: center;
-}
 
-#game-information p {
+.game-message h3 {
   font-size: 20px;
+  line-height: 150%;
 }
 
 /* Rest */
@@ -142,17 +139,12 @@ button {
   background-color: rgb(0, 0, 0);
   font-size: 20px;
   border-radius: 50px;
-  margin: 10px;
+  margin: 40px 0;
   text-transform: uppercase;
 }
 
 button:hover {
   cursor: pointer;
-}
-
-h3 {
-  padding: 10px;
-  line-height: 150%;
 }
 
 h3 a {
@@ -166,7 +158,8 @@ h4 {
 
 span {
   font-weight: 600;
-  color: #c4f403;
+  color: white;
+  font-style: italic;
 }
 
 @media only screen and (min-width: 600px) {
