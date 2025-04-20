@@ -60,20 +60,26 @@
 }
 
 .game-screen {
-  /* display: none; */
+  display: none;
   min-height: 100vh;
 }
 
-.title h1 {
+.title {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: center;
-  width: 50rem;
   margin: 20px;
+  width: auto;
+}
+
+.title h1 { 
   font-size: 40px;
   background-color: black;
   color: #c4f403;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .score-keeper {
@@ -117,7 +123,7 @@
 
 /* Screen 3 */
 .game-over {
-  /* display: none; */
+  display: none;
 }
 
 .game-message {
@@ -185,7 +191,12 @@ span {
   /* Screen 2 */
   .title h1 {
     font-size: 24px;
-    
+    width: 90%;
+    padding: 1em;
+  }
+
+  .fire-icon {
+    display: none;
   }
 
   .score-keeper {
@@ -242,8 +253,13 @@ span {
   .title h1 {
     font-size: 28px;
     width: 100%;
+    padding: 1em;
+    text-align: center;
   }
 
+  .fire-icon {
+    display: none;
+  }
   .score-keeper {
     gap: 15px;
     font-size: 15px;
