@@ -60,7 +60,7 @@
 }
 
 .game-screen {
-  display: none;
+  /* display: none; */
   min-height: 100vh;
 }
 
@@ -72,6 +72,8 @@
   width: 50rem;
   margin: 20px;
   font-size: 40px;
+  background-color: black;
+  color: #c4f403;
 }
 
 .score-keeper {
@@ -115,7 +117,7 @@
 
 /* Screen 3 */
 .game-over {
-  display: none;
+  /* display: none; */
 }
 
 .game-message {
@@ -164,32 +166,158 @@ span {
   font-style: italic;
 }
 
-/* @media only screen and (min-width: 600px) {
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+  /* Screen 1 */
   .intro-screen {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: black;
-    width: 1080px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    border-radius: 25px;
-    min-width: 300px;
+    padding: 2em;
+    max-width: 90%;
   }
 
-  h1 {
-    color: #c4f403;
-    font-size: 40px;
-    background-color: black;
-    padding: 10px;
-    font-family: Inter;
-    display: flex;
-    flex-direction: row;
-    border-radius: 20px;
+  .intro-screen h1 {
+    font-size: 30px;
   }
-} */
+
+  .intro-screen h3 {
+    font-size: 16px;
+  }
+
+  /* Screen 2 */
+  .title h1 {
+    font-size: 24px;
+    
+  }
+
+  .score-keeper {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .square {
+    width: 90px;
+    height: 80px;
+  }
+
+  button {
+    width: 80%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Screen 3 */
+  .game-message {
+    font-size: 20px;
+    padding: 3em;
+  }
+
+  .game-message h3 {
+    font-size: 16px;
+  }
+}
+
+/* Tablet (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Screen 1 */
+  .intro-screen {
+    padding: 3em;
+    max-width: 90%;
+  }
+
+  .intro-screen h1 {
+    font-size: 36px;
+  }
+
+  .intro-screen h3 {
+    font-size: 18px;
+  }
+
+  /* Screen 2 */
+  .title h1 {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .score-keeper {
+    gap: 15px;
+    font-size: 15px;
+    flex-direction: row;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .square {
+    width: 130px;
+    height: 120px;
+  }
+
+  button {
+    width: 10rem;
+    font-size: 18px;
+  }
+
+/* Screen 3 */
+  .game-message {
+    font-size: 24px;
+  }
+
+  .game-message h3 {
+    font-size: 18px;
+  }
+}
+
+/* Laptop (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Screen 1 */
+  .intro-screen {
+    padding: 3em;
+    max-width: 80%;
+  }
+
+  .intro-screen h1 {
+    font-size: 42px;
+  }
+
+  /* Screen 2 */
+  .title h1 {
+    font-size: 32px;
+    width: 80%;
+  }
+
+  .score-keeper {
+    font-size: 16px;
+  }
+
+  .grid {
+    gap: 20px;
+  }
+
+  .square {
+    width: 150px;
+    height: 140px;
+  }
+
+  button {
+    width: 11rem;
+    font-size: 19px;
+  }
+
+/* Screen 3 */
+  .game-message {
+    font-size: 26px;
+  }
+
+  .game-message h3 {
+    font-size: 19px;
+  }
+}
+
