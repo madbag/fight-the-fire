@@ -79,3 +79,5 @@ class Game {
     // this.gameOverScreen.style.display = 'block'
   }
 }
+
+module.exports = Game
